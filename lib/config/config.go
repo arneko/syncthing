@@ -245,6 +245,7 @@ type OptionsConfiguration struct {
 	PingTimeoutS            int      `xml:"pingTimeoutS" json:"pingTimeoutS" default:"30"`
 	PingIdleTimeS           int      `xml:"pingIdleTimeS" json:"pingIdleTimeS" default:"60"`
 	MinHomeDiskFreePct      int      `xml:"minHomeDiskFreePct" json:"minHomeDiskFreePct" default:"1"`
+	DatabaseLocation	[]string `xml:"databaseLocation" json:"databaseLocation" default:""`
 }
 
 func (orig OptionsConfiguration) Copy() OptionsConfiguration {
